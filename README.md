@@ -12,7 +12,7 @@ Para le ejecución del script se debe contar con alguna de las siguientes opcion
 
 * Subsistema Linux en Windows.
 
-*Paquete **make** instalado
+* Paquete **make** instalado
 
 
 ## Explicación 👨‍🏫
