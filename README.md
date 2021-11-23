@@ -1,6 +1,7 @@
 # SSOO-tarea03 💻
 
-
+Se necesita implementar la serie de Fibonnaci y de numeros impares, las 2 para un rango de 50 iteraciones utilizando fork(). Los series deben ejecutarse una en el proceso padre y otra en el proceso hijo.
+La ejecucion del programa no puede ser interrumpida por señales como: Ctrl + C, Ctrl + Z o Ctrl + \.
 
 ## Requisitos ⚙️
 
