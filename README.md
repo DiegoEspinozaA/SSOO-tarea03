@@ -1,7 +1,7 @@
 # SSOO-tarea03 💻
 
 Se necesita implementar la serie de Fibonnaci y de numeros impares, las 2 para un rango de 50 iteraciones utilizando fork(). Los series deben ejecutarse una en el proceso padre y otra en el proceso hijo.
-La ejecucion del programa no puede ser interrumpida por señales como: Ctrl + C, Ctrl + Z o Ctrl + \.
+La ejecucion del programa no puede ser interrumpida por señales como: Ctrl + C, Ctrl + Z o Ctrl + \
 
 ## Requisitos ⚙️
 
@@ -18,6 +18,17 @@ Para le ejecución del script se debe contar con alguna de las siguientes opcion
 
 ## Explicación 👨‍🏫
 
+Inicialmente se deben identificar las macros de las señales.
+
+SIGINT -> Ctrl + C
+
+SIGTSTP -> Ctrl + Z
+
+SIGQUIT -> Ctrl + \
+
+Estas deben ser manejadas utilizando una funcion que devuelva "Detencion no permitida" en caso de ser detectadas.
+
+Utilizando fork() se generan los 2 procesos, el proceso padre ejecutara la sucesion de Fibonacci utilizando un codigo bastante generico y el Hijo implementa la sucesion de numeros impares, iniciando en 1 para luego sumar 2 por cada iteracion.
 
 ## Ejecución ▶
 
