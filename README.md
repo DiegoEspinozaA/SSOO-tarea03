@@ -26,9 +26,9 @@ SIGTSTP -> Ctrl + Z
 
 SIGQUIT -> Ctrl + \
 
-Estas deben ser manejadas utilizando una funcion que devuelva "Detencion no permitida" en caso de ser detectadas.
+Estas deben ser manejadas utilizando una funcion (definida como manejador en el codigo) que devuelva "Detencion no permitida" en caso de ser detectadas.
 
-Utilizando fork() se generan los 2 procesos, el proceso padre ejecutara la sucesion de Fibonacci utilizando un codigo bastante generico y el Hijo implementa la sucesion de numeros impares, iniciando en 1 para luego sumar 2 por cada iteracion.
+Utilizando fork() se generan los 2 procesos, el proceso padre ejecutara la sucesion de Fibonacci utilizando un codigo bastante generico y el hijo implementa la sucesion de numeros impares, iniciando en 1 para luego sumar 2 por cada iteracion.
 
 El proceso principal no cede el control inmediatamente y el ciclo for se ejecuta tan rápido que se realiza antes de que se "programe" el segundo proceso. Cuando se ejecuta el codigo se obtienen impresiones no secuenciales dependiendo del sistema, para reducir esto se utilizan una serie de sleep().
 
